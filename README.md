@@ -1,37 +1,59 @@
-# Developer Portfolio
+# Developer Portfolio - Hasan Bayraktar
 
-Eine moderne, SEO-optimierte und leichtgewichtige persönliche Entwickler-Webseite als Showcase für Bewerbungen und professionelle Kontakte.
+Moderne, bilinguale (Deutsch/Englisch) Portfolio-Webseite für Full Stack Developer mit Dark Mode Design und responsive Mobile Navigation.
 
 ## 🚀 Features
 
-- ✨ **Minimalistisches Design** - Sauberes, professionelles Layout
-- 🎨 **Dark/Light Mode** - Umschaltbare Themes mit LocalStorage-Persistenz
-- 📱 **Fully Responsive** - Mobile-First Design, optimiert für alle Geräte
+- 🌍 **Bilingual** - Vollständige Deutsch/Englisch Unterstützung mit Language-Switcher
+- � **Dark Mode Only** - Modernes dunkles Design als Standard
+- 📱 **Mobile-First Responsive** - Hamburger-Menü mit Slide-in Navigation
 - ⚡ **Performance-optimiert** - Schnelle Ladezeiten, Core Web Vitals freundlich
 - 🔍 **SEO-optimiert** - Meta-Tags, strukturierte Daten (JSON-LD), OpenGraph
 - ♿ **Accessibility** - WCAG-konform, Tastaturnavigation, Screen-Reader-freundlich
 - 🎯 **Vanilla JavaScript** - Keine schweren Frameworks, pure Performance
 - 📦 **Statische Dateien** - Einfach zu hosten auf jedem Webserver
+- 💾 **LocalStorage Persistenz** - Sprachauswahl wird gespeichert
 
 ## 📁 Projektstruktur
 
 ```
 developer-portfolio/
-├── index.html              # Haupt-HTML-Datei
+├── index.html              # Haupt-HTML-Datei (Bilingual)
+├── impressum.html          # Impressum-Seite
+├── datenschutz.html        # Datenschutzerklärung
 ├── manifest.json           # PWA-Manifest
 ├── README.md              # Diese Datei
+├── DEPLOYMENT.md          # Deployment-Anleitung
 ├── assets/
 │   ├── css/
-│   │   └── style.css      # Haupt-Stylesheet
+│   │   └── style.css      # Haupt-Stylesheet (Dark Mode)
 │   ├── js/
-│   │   └── script.js      # JavaScript-Funktionalität
+│   │   └── script.js      # JavaScript (Language Switcher, Mobile Menu)
 │   └── images/
 │       ├── favicon.svg    # Favicon
-│       ├── project-1.jpg  # Projektbilder (optional)
-│       ├── project-2.jpg
-│       ├── project-3.jpg
-│       └── project-4.jpg
+│       ├── project-1.jpg  # Sally's Cafe Projekt
+│       └── project-2.jpg  # MLK Abdichtungstechnik Projekt
 ```
+
+## 🌐 Live Demo
+
+- **GitHub Pages**: [bayraktarhasan.github.io](https://bayraktarhasan.github.io)
+- **LinkedIn**: [Hasan Bayraktar](https://at.linkedin.com/in/hasan-bayraktar-632a95154)
+- **GitHub**: [github.com/bayraktarhasan](https://github.com/bayraktarhasan)
+
+## 💻 Tech Stack
+
+### Dargestellt im Portfolio:
+- **Frontend**: Angular, React, React Native, JavaScript, HTML/CSS
+- **Backend**: Java, Spring Boot, Python, PHP, REST APIs
+- **Tools & Datenbanken**: Git, SQL, Mindbreeze, Elasticsearch
+
+### Verwendete Technologien für die Website:
+- **HTML5** - Semantisches Markup
+- **CSS3** - CSS Grid, Flexbox, CSS Variables
+- **Vanilla JavaScript** - Language Switcher, Mobile Menu, Smooth Scrolling
+- **Google Fonts** - Inter (300-700 weights)
+- **No Dependencies** - Keine externe Libraries
 
 ## 🛠️ Installation & Lokale Entwicklung
 
@@ -59,14 +81,14 @@ developer-portfolio/
    **Option B: Mit Python**
    ```bash
    # Python 3
-   python -m http.server 8000
+   python -m http.server 8001
    
-   # Dann öffne: http://localhost:8000
+   # Dann öffne: http://localhost:8001
    ```
 
    **Option C: Mit Node.js (http-server)**
    ```bash
-   npx http-server -p 8000
+   npx http-server -p 8001
    ```
 
    **Option D: Direkt im Browser**
@@ -75,23 +97,58 @@ developer-portfolio/
 
 ## ✏️ Anpassung der Inhalte
 
-### 1. Persönliche Informationen ändern
+### Wichtig: Bilinguale Struktur
 
-Öffne `index.html` und ersetze folgende Platzhalter:
+Diese Website unterstützt Deutsch (Standard) und Englisch. Alle übersetzbaren Texte verwenden `data-de` und `data-en` Attribute:
 
 ```html
-<!-- Name -->
-<h1>Hi, ich bin <span class="highlight">Max Mustermann</span></h1>
-
-<!-- Email -->
-<a href="mailto:max.mustermann@example.com">max.mustermann@example.com</a>
-
-<!-- Social Links -->
-<a href="https://github.com/maxmustermann">GitHub</a>
-<a href="https://linkedin.com/in/maxmustermann">LinkedIn</a>
+<h1 data-de="Deutscher Text" data-en="English Text">Deutscher Text</h1>
 ```
 
-### 2. SEO Meta-Tags anpassen
+### 1. Persönliche Informationen ändern
+
+Öffne `index.html` und ersetze folgende Inhalte:
+
+```html
+<!-- Name im Hero-Bereich -->
+<h1 class="hero-title" 
+    data-de="Hi, ich bin <span class='highlight'>Dein Name</span>" 
+    data-en="Hi, I'm <span class='highlight'>Your Name</span>">
+    Hi, ich bin <span class="highlight">Dein Name</span>
+</h1>
+
+<!-- Über mich Sektion -->
+<p data-de="Dein deutscher Text..." data-en="Your English text...">
+    Dein deutscher Text...
+</p>
+
+<!-- Email -->
+<a href="mailto:deine@email.com">deine@email.com</a>
+
+<!-- Social Links -->
+<a href="https://github.com/deinusername">GitHub</a>
+<a href="https://linkedin.com/in/deinprofil">LinkedIn</a>
+```
+
+### 2. Sprachübersetzungen anpassen
+
+**Alle Texte mit `data-de` und `data-en` werden automatisch übersetzt!**
+
+Beispiele:
+```html
+<!-- Navigation -->
+<a href="#about" class="nav-link" data-de="Über mich" data-en="About">Über mich</a>
+
+<!-- Buttons -->
+<a href="#projects" class="btn">
+    <span data-de="Projekte ansehen" data-en="View Projects">Projekte ansehen</span>
+</a>
+
+<!-- Inhalte -->
+<h2 data-de="Meine Projekte" data-en="My Projects">Meine Projekte</h2>
+```
+
+### 3. SEO Meta-Tags anpassen
 
 Im `<head>`-Bereich von `index.html`:
 
@@ -99,9 +156,14 @@ Im `<head>`-Bereich von `index.html`:
 <title>Dein Name - Full Stack Developer | Portfolio</title>
 <meta name="description" content="Deine Beschreibung...">
 <meta property="og:url" content="https://deinewebsite.de/">
+<meta property="og:title" content="Dein Name - Full Stack Developer">
 ```
 
-### 3. Projekte hinzufügen/ändern
+### 4. Projekte hinzufügen/ändern
+
+Aktuelle Projekte im Portfolio:
+1. **Sally's Cafe & Imbiss** - Next.js, React, Cockpit CMS
+2. **MLK Abdichtungstechnik** - WordPress, PHP, CSS, SEO
 
 Finde die `.project-card` Elemente im HTML und passe sie an:
 
@@ -109,20 +171,35 @@ Finde die `.project-card` Elemente im HTML und passe sie an:
 <article class="project-card">
     <div class="project-image">
         <img src="assets/images/dein-projekt.jpg" alt="Projekt Name">
-        <!-- ... -->
     </div>
     <div class="project-content">
-        <h3 class="project-title">Dein Projekt</h3>
-        <p class="project-description">Beschreibung...</p>
+        <h3 class="project-title" data-de="Deutscher Titel" data-en="English Title">
+            Deutscher Titel
+        </h3>
+        <p class="project-description" 
+           data-de="Deutsche Beschreibung..." 
+           data-en="English description...">
+            Deutsche Beschreibung...
+        </p>
         <div class="project-tech">
             <span class="tech-tag">React</span>
-            <!-- Weitere Tech-Tags -->
+            <span class="tech-tag">Node.js</span>
+        </div>
+        <div class="project-links">
+            <a href="https://projekturl.de" target="_blank">
+                <span data-de="Live Demo" data-en="Live Demo">Live Demo</span>
+            </a>
         </div>
     </div>
 </article>
 ```
 
-### 4. Berufserfahrung anpassen
+### 5. Berufserfahrung anpassen
+
+Aktuelle Timeline:
+1. **2019 - Heute**: Full Stack Developer @ 3 Banken IT
+2. **2018 - 2019**: Web Entwickler @ Lackner Media  
+3. **2018**: IT-Kolleg Abschluss @ IT-Kolleg Imst, Austria
 
 Bearbeite die `.timeline-item` Elemente:
 
@@ -130,38 +207,53 @@ Bearbeite die `.timeline-item` Elemente:
 <div class="timeline-item">
     <div class="timeline-dot"></div>
     <div class="timeline-content">
-        <div class="timeline-date">2022 - Heute</div>
-        <h3 class="timeline-title">Deine Position</h3>
+        <div class="timeline-date" data-de="2022 - Heute" data-en="2022 - Present">
+            2022 - Heute
+        </div>
+        <h3 class="timeline-title" data-de="Deine Position" data-en="Your Position">
+            Deine Position
+        </h3>
         <h4 class="timeline-company">Deine Firma</h4>
-        <!-- ... -->
+        <p data-de="Deutsche Beschreibung..." data-en="English description...">
+            Deutsche Beschreibung...
+        </p>
     </div>
 </div>
 ```
 
-### 5. Farben & Design anpassen
+### 6. Design & Farben anpassen
 
-In `assets/css/style.css` am Anfang der Datei:
+Die Seite verwendet **nur Dark Mode**. Farben in `assets/css/style.css`:
 
 ```css
 :root {
-    --primary-color: #3b82f6;      /* Hauptfarbe */
-    --secondary-color: #8b5cf6;    /* Sekundärfarbe */
-    --accent-color: #10b981;       /* Akzentfarbe */
-    /* ... weitere Variablen */
+    /* Hauptfarben */
+    --primary-color: #3b82f6;      /* Blau - Hauptfarbe */
+    --secondary-color: #8b5cf6;    /* Lila - Sekundärfarbe */
+    --accent-color: #10b981;       /* Grün - Akzentfarbe */
+    
+    /* Dark Mode Theme */
+    --bg-primary: #0a0a0a;         /* Haupthintergrund */
+    --bg-secondary: #141414;       /* Cards/Navigation */
+    --text-primary: #e5e7eb;       /* Haupttext */
+    --border-color: #262626;       /* Rahmen */
 }
 ```
 
 ## 🌐 Deployment
 
-### GitHub Pages (Kostenlos)
+Detaillierte Deployment-Anleitung findest du in [DEPLOYMENT.md](DEPLOYMENT.md)
+
+### Quick Start: GitHub Pages
 
 1. **Repository erstellen**
    ```bash
+   cd developer-portfolio
    git init
    git add .
-   git commit -m "Initial commit"
+   git commit -m "Initial commit: Bilingual portfolio with dark mode"
    git branch -M main
-   git remote add origin https://github.com/deinusername/portfolio.git
+   git remote add origin https://github.com/deinusername/deinusername.github.io.git
    git push -u origin main
    ```
 
@@ -169,94 +261,55 @@ In `assets/css/style.css` am Anfang der Datei:
    - Gehe zu Repository → Settings → Pages
    - Source: "main" branch, "/" (root)
    - Speichern
-   - Deine Seite ist verfügbar unter: `https://deinusername.github.io/portfolio/`
+   - Deine Seite ist verfügbar unter: `https://deinusername.github.io/`
 
-### Vercel (Empfohlen)
+### Alternative Hosting-Optionen
 
-1. **Bei Vercel anmelden**
-   - Gehe zu [vercel.com](https://vercel.com)
-   - Melde dich mit GitHub an
+- **Vercel**: Automatisches Deployment via GitHub
+- **Netlify**: Drag & Drop oder Git-Integration
+- **Cloudflare Pages**: Schnelle globale Auslieferung
+- **GitHub Pages**: Kostenlos für öffentliche Repos
 
-2. **Projekt importieren**
-   - "New Project" → Wähle dein GitHub Repository
-   - Deploy!
-   - Deine Seite ist sofort live mit einer `.vercel.app` Domain
+##  Erweiterte Anpassungen
 
-3. **Custom Domain (Optional)**
-   - In Vercel: Settings → Domains
-   - Füge deine eigene Domain hinzu
+### Language Switcher Funktionalität
 
-### Netlify
-
-1. **Bei Netlify anmelden**
-   - Gehe zu [netlify.com](https://netlify.com)
-   - Melde dich mit GitHub an
-
-2. **Drag & Drop Deployment**
-   - Ziehe den `developer-portfolio` Ordner auf netlify.com/drop
-   - Oder verbinde dein GitHub Repository
-   - Fertig!
-
-### Cloudflare Pages
-
-1. **GitHub Repo verbinden**
-   - In Cloudflare Dashboard → Pages
-   - "Create a project" → Connect GitHub
-   - Wähle dein Repository
-
-2. **Build Settings**
-   - Build command: (leer lassen für statische Sites)
-   - Output directory: `/`
-   - Deploy!
-
-## 📧 Kontaktformular einrichten
-
-Das Formular ist vorbereitet, aber benötigt einen Backend-Service:
-
-### Option 1: Formspree (Einfachste Lösung)
-
-1. Registriere dich bei [formspree.io](https://formspree.io)
-2. Erstelle ein neues Formular
-3. Füge den Code in `assets/js/script.js` ein:
+Der Language Switcher verwendet LocalStorage zur Persistenz:
 
 ```javascript
-fetch('https://formspree.io/f/YOUR_FORM_ID', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(formData)
-});
+// In script.js - Sprache wechseln
+let currentLang = localStorage.getItem('language') || 'de';
+
+// Alle Elemente mit data-de und data-en werden automatisch übersetzt
+const translatableElements = document.querySelectorAll('[data-de][data-en]');
 ```
 
-### Option 2: EmailJS
+**Desktop**: Language-Switcher rechts in der Navigation  
+**Mobile**: Language-Switcher links neben dem Hamburger-Icon
 
-1. Registriere dich bei [emailjs.com](https://www.emailjs.com)
-2. Erstelle einen Email-Service
-3. Binde die EmailJS-Library ein und konfiguriere sie
+### Mobile Navigation
 
-### Option 3: Eigenes Backend
+Die mobile Navigation verwendet ein Hamburger-Menü mit Slide-in Drawer:
 
-Erstelle eine serverless Function (Vercel, Netlify Functions, AWS Lambda) die E-Mails versendet.
+- **Hamburger-Icon**: Transformiert zu "X" wenn aktiv
+- **Slide-in Menü**: 280px breiter Drawer von rechts
+- **Auto-Close**: Schließt automatisch bei Link-Klick oder außerhalb-Klick
+- **Responsive**: Aktiviert bei `max-width: 768px`
 
-## 🎨 Projektbilder hinzufügen
-
-1. Erstelle Screenshots oder Mockups deiner Projekte
-2. Optimiere die Bilder (empfohlen: WebP-Format, max. 800x600px)
-3. Speichere sie in `assets/images/` als:
-   - `project-1.jpg`
-   - `project-2.jpg`
-   - `project-3.jpg`
-   - `project-4.jpg`
-
-**Tipp:** Nutze Tools wie [TinyPNG](https://tinypng.com) oder [Squoosh](https://squoosh.app) zur Bildoptimierung.
-
-## 🔧 Erweiterte Anpassungen
+```css
+/* Mobile Controls (Language + Hamburger) */
+.nav-controls {
+    display: flex; /* Nur auf Mobile sichtbar */
+    gap: 1rem;
+}
+```
 
 ### Icons ändern
 
 Die Social Media Icons sind inline SVG. Du kannst sie durch andere ersetzen von:
 - [Heroicons](https://heroicons.com)
 - [Feather Icons](https://feathericons.com)
-- [Font Awesome](https://fontawesome.com)
+- [Lucide Icons](https://lucide.dev)
 
 ### Schriftart ändern
 
@@ -274,12 +327,6 @@ In `style.css`:
 }
 ```
 
-### PWA aktivieren
-
-1. Erstelle Icons (192x192 und 512x512) und speichere sie in `assets/images/`
-2. Manifest ist bereits vorhanden (`manifest.json`)
-3. Optional: Erstelle einen Service Worker für Offline-Funktionalität
-
 ## 📊 Performance-Tipps
 
 - **Bilder komprimieren**: Nutze WebP-Format und optimiere alle Bilder
@@ -290,48 +337,119 @@ In `style.css`:
 
 ## 📝 Impressum & Datenschutz
 
-Erstelle zusätzliche Seiten:
+✅ **Bereits implementiert!**
 
-1. `impressum.html` - Deine rechtlichen Angaben
-2. `datenschutz.html` - Datenschutzerklärung (DSGVO)
+Die Seite enthält bereits:
+1. `impressum.html` - Rechtliche Angaben
+2. `datenschutz.html` - Datenschutzerklärung (DSGVO-konform)
 
-**Wichtig:** In Deutschland/EU benötigst du ein Impressum und eine Datenschutzerklärung!
+**Wichtig:** Passe diese Seiten mit deinen eigenen Daten an!
 
-Generatoren:
+Links im Footer:
+```html
+<a href="impressum.html" data-de="Impressum" data-en="Imprint">Impressum</a>
+<a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+```
+
+Generatoren für eigene Inhalte:
 - [Impressum Generator](https://www.e-recht24.de/impressum-generator.html)
 - [Datenschutz Generator](https://www.e-recht24.de/muster-datenschutzerklaerung.html)
 
-## 🐛 Troubleshooting
+## � Performance & SEO
+
+### Bereits implementiert:
+
+- ✅ **Semantic HTML5** - Strukturierte Markup
+- ✅ **Meta Tags** - Title, Description, Keywords
+- ✅ **Open Graph** - Social Media Sharing
+- ✅ **Twitter Cards** - Twitter Integration  
+- ✅ **JSON-LD** - Structured Data (schema.org Person)
+- ✅ **Lazy Loading** - Bilder werden verzögert geladen
+- ✅ **Responsive Images** - Optimiert für verschiedene Bildschirmgrößen
+- ✅ **CSS Variables** - Wartbare Styles
+- ✅ **Vanilla JavaScript** - Keine Heavy Dependencies
+
+### Performance-Tipps:
+
+- **Bilder komprimieren**: Nutze WebP-Format und optimiere alle Bilder
+- **Lighthouse Test**: Chrome DevTools → Lighthouse für Performance-Check
+- **CDN nutzen**: Für schnellere globale Auslieferung
+- **Minify für Production**: CSS und JS komprimieren
+
+Tools:
+- [TinyPNG](https://tinypng.com) - Bildkomprimierung
+- [Squoosh](https://squoosh.app) - WebP Konvertierung
+- [PageSpeed Insights](https://pagespeed.web.dev/) - Performance-Analyse
+
+### Sprache wechselt nicht
+- Überprüfe ob JavaScript aktiviert ist
+- Stelle sicher, dass alle Texte `data-de` und `data-en` Attribute haben
+- Lösche den LocalStorage: `localStorage.clear()` in Browser Console
+
+### Mobile Menü öffnet nicht
+- Prüfe ob JavaScript aktiviert ist
+- Überprüfe die Browser-Console auf Fehler
+- Teste auf einem echten Gerät (nicht nur Browser DevTools)
 
 ### Fonts werden nicht geladen
 - Überprüfe die Internet-Verbindung
-- Teste mit lokalen System-Fonts
+- Teste mit lokalen System-Fonts als Fallback
 
-### Dark Mode funktioniert nicht
-- Prüfe ob JavaScript aktiviert ist
-- Lösche den LocalStorage: `localStorage.clear()`
+### Language-Switcher zeigt nicht richtig an
+- Beide Buttons (Desktop & Mobile) sollten synchron sein
+- Prüfe ob `updateLanguageDisplay()` alle `.lang-de` und `.lang-en` Elemente findet
 
-### Kontaktformular sendet nicht
-- Siehe "Kontaktformular einrichten" Sektion
-- Überprüfe die Browser-Console auf Fehler
+### Hamburger-Menü schließt nicht automatisch
+- Menü sollte schließen bei:
+  - Klick auf einen Nav-Link ✅
+  - Klick außerhalb des Menüs ✅
+- Prüfe Browser Console auf JavaScript-Fehler
 
 ## 📄 Lizenz
 
-Dieses Projekt ist als Template gedacht. Du kannst es frei verwenden und anpassen für deine persönlichen Zwecke.
+Dieses Projekt ist als persönliches Portfolio entwickelt. Du kannst es als Template/Inspiration für dein eigenes Portfolio verwenden.
 
-## 🤝 Support & Kontakt
+## 🤝 Kontakt
 
-Bei Fragen oder Problemen:
-- Erstelle ein Issue auf GitHub
-- Kontaktiere mich direkt über die Webseite
+**Hasan Bayraktar**  
+Full Stack Developer aus Österreich
 
-## 🎉 Credits
+- 📧 Email: [bayraktarhasan@outlook.de](mailto:bayraktarhasan@outlook.de)
+- 💼 LinkedIn: [Hasan Bayraktar](https://at.linkedin.com/in/hasan-bayraktar-632a95154)
+- 🐙 GitHub: [@bayraktarhasan](https://github.com/bayraktarhasan)
+- 🌐 Website: [bayraktarhasan.github.io](https://bayraktarhasan.github.io)
 
-- Icons: Inline SVG
-- Fonts: Google Fonts (Inter)
-- Design: Custom, modern minimalistisch
-- Entwickelt mit ❤️ und Vanilla JavaScript
+## 🎉 Features im Detail
+
+### Bilingual System
+- Deutsch als Standardsprache
+- Vollständige englische Übersetzung
+- LocalStorage Persistenz für Sprachauswahl
+- Automatische Übersetzung aller `data-de/data-en` Elemente
+- Synchronisierte Language-Switcher (Desktop + Mobile)
+
+### Responsive Design
+- Mobile-First Approach
+- Hamburger-Menü mit Slide-in Animation
+- Language-Switcher neben Hamburger-Icon (Mobile)
+- Optimiert für alle Bildschirmgrößen
+- Touch-optimierte Buttons und Links
+
+### Dark Mode
+- Modernes dunkles Design als Standard
+- Optimierte Farbpalette für Lesbarkeit
+- CSS Variables für einfache Anpassung
+- Keine Theme-Toggle (bewusst dark-only)
+
+### Performance
+- Keine externen Dependencies
+- Vanilla JavaScript
+- Optimierte CSS (Grid + Flexbox)
+- Lazy Loading für Bilder
+- Schnelle Ladezeiten
 
 ---
 
 **Viel Erfolg mit deinem Portfolio! 🚀**
+
+Entwickelt mit ❤️ in Österreich | 2025

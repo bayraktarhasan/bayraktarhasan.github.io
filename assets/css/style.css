@@ -550,10 +550,10 @@ button {
     border-radius: var(--radius-md);
     font-weight: 500;
     transition: all var(--transition-fast);
+        background-color: var(--primary-color);
 }
 
 .project-link:hover {
-    background-color: var(--primary-color);
     color: white;
     transform: scale(1.05);
 }

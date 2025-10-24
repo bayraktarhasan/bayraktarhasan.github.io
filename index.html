@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Hasan Bayraktar - Full Stack Developer | Portfolio</title>
+    <meta name="description" content="Full Stack Developer mit Expertise in Web-Entwicklung, JavaScript, Python und Cloud-Technologien. Entdecken Sie meine Projekte und Erfahrungen.">
+    <meta name="keywords" content="Full Stack Developer, Web Entwicklung, JavaScript, React, Node.js, Python, Portfolio">
+    <meta name="author" content="Hasan Bayraktar">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bayraktarhasan.github.io/">
+    <meta property="og:title" content="Hasan Bayraktar - Full Stack Developer">
+    <meta property="og:description" content="Full Stack Developer mit Expertise in Web-Entwicklung, JavaScript, Python und Cloud-Technologien.">
+    <meta property="og:image" content="https://bayraktarhasan.github.io/assets/images/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://bayraktarhasan.github.io/">
+    <meta name="twitter:title" content="Hasan Bayraktar - Full Stack Developer">
+    <meta name="twitter:description" content="Full Stack Developer mit Expertise in Web-Entwicklung, JavaScript, Python und Cloud-Technologien.">
+    <meta name="twitter:image" content="https://bayraktarhasan.github.io/assets/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="alternate icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#3b82f6">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts - Inter for modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hasan Bayraktar",
+      "jobTitle": "Full Stack Developer",
+      "url": "https://bayraktarhasan.github.io",
+      "sameAs": [
+        "https://github.com/bayraktarhasan",
+        "https://at.linkedin.com/in/hasan-bayraktar-632a95154"
+      ],
+      "knowsAbout": ["Web Development", "JavaScript", "Python", "React", "Node.js", "Cloud Computing"],
+      "description": "Erfahrener Full Stack Developer mit Fokus auf moderne Web-Technologien und Cloud-Lösungen."
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">HB</a>
+            <!-- Mobile Controls (Language + Hamburger) -->
+            <div class="nav-controls">
+                <button class="language-toggle mobile-lang-toggle" id="mobile-language-toggle" aria-label="Change Language">
+                    <span class="lang-de">DE</span>
+                    <span class="lang-en" style="display: none;">EN</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <!-- Desktop Navigation -->
+            <div class="nav-right" id="nav-right">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link" data-de="Home" data-en="Home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-de="Über mich" data-en="About">Über mich</a></li>
+                    <li><a href="#projects" class="nav-link" data-de="Projekte" data-en="Projects">Projekte</a></li>
+                    <li><a href="#experience" class="nav-link" data-de="Erfahrung" data-en="Experience">Erfahrung</a></li>
+                    <li><a href="#contact" class="nav-link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+                </ul>
+                <button class="language-toggle desktop-lang-toggle" id="language-toggle" aria-label="Change Language">
+                    <span class="lang-de">DE</span>
+                    <span class="lang-en" style="display: none;">EN</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title fade-in" data-de="Hi, ich bin <span class='highlight'>Hasan Bayraktar</span>" data-en="Hi, I'm <span class='highlight'>Hasan Bayraktar</span>">
+                        Hi, ich bin <span class="highlight">Hasan Bayraktar</span>
+                    </h1>
+                    <h2 class="hero-subtitle fade-in-delay-1">Full Stack Developer</h2>
+                    <p class="hero-description fade-in-delay-2" data-de="Ich entwickle moderne, performante Web-Anwendungen mit Fokus auf Clean Code, User Experience und Skalierbarkeit." data-en="I develop modern, high-performance web applications with a focus on clean code, user experience, and scalability.">
+                        Ich entwickle moderne, performante Web-Anwendungen mit Fokus auf 
+                        Clean Code, User Experience und Skalierbarkeit.
+                    </p>
+                    <div class="hero-cta fade-in-delay-3">
+                        <a href="#projects" class="btn btn-primary">
+                            <span data-de="Projekte ansehen" data-en="View Projects">Projekte ansehen</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span data-de="Kontakt aufnehmen" data-en="Get in Touch">Kontakt aufnehmen</span>
+                        </a>
+                    </div>
+                    <div class="hero-social fade-in-delay-4">
+                        <a href="https://github.com/bayraktarhasan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://at.linkedin.com/in/hasan-bayraktar-632a95154" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:bayraktarhasan@outlook.de" aria-label="Email">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title" data-de="Über mich" data-en="About Me">Über mich</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro" data-de="Hallo! Ich bin Hasan, ein leidenschaftlicher Full Stack Developer aus Österreich mit mehreren Jahren Erfahrung in der Entwicklung moderner Web-Anwendungen." data-en="Hello! I'm Hasan, a passionate Full Stack Developer from Austria with several years of experience in developing modern web applications.">
+                            Hallo! Ich bin Hasan, ein leidenschaftlicher Full Stack Developer aus Österreich 
+                            mit mehreren Jahren Erfahrung in der Entwicklung moderner Web-Anwendungen.
+                        </p>
+                        <p data-de="Meine Reise in der Software-Entwicklung begann mit einem IT-Kolleg und hat mich durch verschiedene spannende Projekte und Technologien geführt. Ich liebe es, komplexe Probleme zu lösen und intuitive, performante Lösungen zu entwickeln." data-en="My journey in software development began with an IT college and has taken me through various exciting projects and technologies. I love solving complex problems and developing intuitive, high-performance solutions.">
+                            Meine Reise in der Software-Entwicklung begann mit einem IT-Kolleg und 
+                            hat mich durch verschiedene spannende Projekte und Technologien geführt. Ich liebe 
+                            es, komplexe Probleme zu lösen und intuitive, performante Lösungen zu entwickeln.
+                        </p>
+                        <p data-de="Neben dem Programmieren habe ich eine große Leidenschaft für mechanische Uhren. Ich bin Gründer der Uhrenmarke OSAH, baue und repariere Uhren hobbymäßig. Die Präzision und das Handwerk der Uhrmacherei faszinieren mich genauso wie eleganter, gut strukturierter Code." data-en="Besides programming, I have a great passion for mechanical watches. I am the founder of the watch brand OSAH, building and repairing watches as a hobby. The precision and craftsmanship of watchmaking fascinate me as much as elegant, well-structured code.">
+                            Neben dem Programmieren habe ich eine große Leidenschaft für mechanische Uhren. 
+                            Ich bin Gründer der Uhrenmarke <a href="https://www.osah-watches.com" target="_blank" rel="noopener noreferrer" class="inline-link">OSAH</a>, 
+                            baue und repariere Uhren hobbymäßig. Die Präzision und das Handwerk der Uhrmacherei 
+                            faszinieren mich genauso wie eleganter, gut strukturierter Code.
+                        </p>
+                    </div>
+                    <div class="skills-container">
+                        <h3 class="skills-title">Tech Stack</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Frontend</h4>
+                                <ul>
+                                    <li><span class="skill-badge">Angular</span></li>
+                                    <li><span class="skill-badge">React</span></li>
+                                    <li><span class="skill-badge">React Native</span></li>
+                                    <li><span class="skill-badge">JavaScript</span></li>
+                                    <li><span class="skill-badge">HTML/CSS</span></li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Backend</h4>
+                                <ul>
+                                    <li><span class="skill-badge">Java</span></li>
+                                    <li><span class="skill-badge">Spring Boot</span></li>
+                                    <li><span class="skill-badge">Python</span></li>
+                                    <li><span class="skill-badge">PHP</span></li>
+                                    <li><span class="skill-badge">REST APIs</span></li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Tools & Search</h4>
+                                <ul>
+                                    <li><span class="skill-badge">Git</span></li>
+                                    <li><span class="skill-badge">SQL</span></li>
+                                    <li><span class="skill-badge">Mindbreeze</span></li>
+                                    <li><span class="skill-badge">Elasticsearch</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title" data-de="Ausgewählte Projekte" data-en="Selected Projects">Ausgewählte Projekte</h2>
+                <p class="section-subtitle" data-de="Hier sind einige meiner neuesten Arbeiten" data-en="Here are some of my latest works">Hier sind einige meiner neuesten Arbeiten</p>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project-1.jpg" alt="Sally's Cafe & Imbiss" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://sallyscafeimbiss.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Live ansehen
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sally's Cafe & Imbiss</h3>
+                            <p class="project-description" data-de="Moderne Restaurant-Webseite mit integriertem Bestellsystem über WhatsApp. Komplettes Menü mit Preisen, Extras und individuellen Anpassungsmöglichkeiten. Entwickelt mit Next.js für optimale Performance und Cockpit CMS für einfache Inhaltsverwaltung." data-en="Modern restaurant website with integrated ordering system via WhatsApp. Complete menu with prices, extras and individual customization options. Developed with Next.js for optimal performance and Cockpit CMS for easy content management.">
+                                Moderne Restaurant-Webseite mit integriertem Bestellsystem über WhatsApp. 
+                                Komplettes Menü mit Preisen, Extras und individuellen Anpassungsmöglichkeiten. 
+                                Entwickelt mit Next.js für optimale Performance und Cockpit CMS für einfache Inhaltsverwaltung.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Cockpit CMS</span>
+                                <span class="tech-tag">WhatsApp Integration</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project-2.jpg" alt="MLK Abdichtungstechnik" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://mlk-abdichtungstechnik.at/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Live ansehen
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">MLK Abdichtungstechnik</h3>
+                            <p class="project-description" data-de="Professionelle Unternehmenswebseite für einen Bauwerksabdichter mit Fokus auf Servicedarstellung und Kundengewinnung. Responsive Design, SEO-optimiert und mit einfacher Inhaltsverwaltung über WordPress." data-en="Professional corporate website for a waterproofing specialist focused on service presentation and customer acquisition. Responsive design, SEO-optimized with easy content management via WordPress.">
+                                Professionelle Unternehmenswebseite für einen Bauwerksabdichter mit Fokus auf 
+                                Servicedarstellung und Kundengewinnung. Responsive Design, SEO-optimiert und 
+                                mit einfacher Inhaltsverwaltung über WordPress.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">WordPress</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">SEO</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section-title" data-de="Berufliche Laufbahn" data-en="Professional Career">Berufliche Laufbahn</h2>
+                <p class="section-subtitle" data-de="Mein Weg als Developer" data-en="My Journey as a Developer">Mein Weg als Developer</p>
+                
+                <div class="timeline">
+                    <!-- Experience Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2019 - <span data-de="Heute" data-en="Present">Heute</span></div>
+                            <h3 class="timeline-title">Full Stack Developer</h3>
+                            <h4 class="timeline-company">3 Banken IT</h4>
+                            <p class="timeline-description" data-de="Entwicklung und Wartung von Banking-Anwendungen und Enterprise-Lösungen. Arbeit mit modernen Technologien im Frontend und Backend. Implementierung von sicheren, skalierbaren Web-Anwendungen für den Finanzsektor." data-en="Development and maintenance of banking applications and enterprise solutions. Working with modern frontend and backend technologies. Implementation of secure, scalable web applications for the financial sector.">
+                                Entwicklung und Wartung von Banking-Anwendungen und Enterprise-Lösungen. 
+                                Arbeit mit modernen Technologien im Frontend und Backend. Implementierung 
+                                von sicheren, skalierbaren Web-Anwendungen für den Finanzsektor.
+                            </p>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2018 - 2019</div>
+                            <h3 class="timeline-title" data-de="Web Entwickler" data-en="Web Developer">Web Entwickler</h3>
+                            <h4 class="timeline-company" data-de="Werbeagentur Lackner Media" data-en="Advertising Agency Lackner Media">Werbeagentur Lackner Media</h4>
+                            <p class="timeline-description" data-de="Entwicklung von Kunden-Webseiten und digitalen Marketing-Lösungen. Eigenständige Abwicklung von Projekten von der Konzeption bis zur Fertigstellung. Umsetzung von responsiven Designs, Joomla CMS-Integration und SEO-Optimierung. Direkte Zusammenarbeit mit Kunden und dem Design-Team." data-en="Development of client websites and digital marketing solutions. Independent project management from concept to completion. Implementation of responsive designs, Joomla CMS integration and SEO optimization. Direct collaboration with clients and the design team.">
+                                Entwicklung von Kunden-Webseiten und digitalen Marketing-Lösungen. 
+                                Eigenständige Abwicklung von Projekten von der Konzeption bis zur Fertigstellung. 
+                                Umsetzung von responsiven Designs, Joomla CMS-Integration und SEO-Optimierung. 
+                                Direkte Zusammenarbeit mit Kunden und dem Design-Team.
+                            </p>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">Joomla</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2018</div>
+                            <h3 class="timeline-title" data-de="IT-Kolleg Abschluss" data-en="IT College Graduation">IT-Kolleg Abschluss</h3>
+                            <h4 class="timeline-company" data-de="IT-Kolleg Imst, Österreich" data-en="IT College Imst, Austria">IT-Kolleg Imst, Österreich</h4>
+                            <p class="timeline-description" data-de="Abschluss des IT-Kollegs mit Schwerpunkt auf Software-Entwicklung und Informatik. Fundierte Ausbildung in Programmierung, Datenbanken, Netzwerktechnik und Web-Technologien." data-en="Graduation from IT College with focus on software development and computer science. Comprehensive training in programming, databases, network technology and web technologies.">
+                                Abschluss des IT-Kollegs mit Schwerpunkt auf Software-Entwicklung und 
+                                Informatik. Fundierte Ausbildung in Programmierung, Datenbanken, 
+                                Netzwerktechnik und Web-Technologien.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title" data-de="Kontakt aufnehmen" data-en="Get in Touch">Kontakt aufnehmen</h2>
+                <p class="section-subtitle" data-de="Interessiert an einer Zusammenarbeit? Schreiben Sie mir!" data-en="Interested in collaboration? Contact me!">Interessiert an einer Zusammenarbeit? Schreiben Sie mir!</p>
+                
+                <div class="contact-content-center">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:bayraktarhasan@outlook.de">bayraktarhasan@outlook.de</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <h3 data-de="Standort" data-en="Location">Standort</h3>
+                                <p data-de="Österreich" data-en="Austria">Österreich</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-cta">
+                        <a href="mailto:bayraktarhasan@outlook.de?subject=Kontaktanfrage%20von%20Portfolio&body=Hallo%20Hasan,%0A%0A" class="btn btn-primary btn-large" data-de="E-Mail schreiben" data-en="Send Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>E-Mail schreiben</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-text">
+                <p data-de="&copy; 2025 Hasan Bayraktar. Alle Rechte vorbehalten." data-en="&copy; 2025 Hasan Bayraktar. All rights reserved.">&copy; 2025 Hasan Bayraktar. Alle Rechte vorbehalten.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/impressum.html" data-de="Impressum" data-en="Imprint">Impressum</a>
+                <span class="footer-separator">|</span>
+                <a href="/datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/bayraktarhasan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg class="social-icon-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://at.linkedin.com/in/hasan-bayraktar-632a95154" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg class="social-icon-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

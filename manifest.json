@@ -1,0 +1,27 @@
+{
+  "name": "Hasan Bayraktar Portfolio",
+  "short_name": "HB Portfolio",
+  "description": "Full Stack Developer Portfolio - Hasan Bayraktar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "business"],
+  "lang": "de-DE",
+  "dir": "ltr"
+}
